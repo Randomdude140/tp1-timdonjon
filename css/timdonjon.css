@@ -1,0 +1,45 @@
+html {
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-image: url(../img/d20.jpg);
+	color: white;
+}
+
+form {
+	width: 600px;
+	margin: 50px auto;
+	color: #444;
+	background-color: white;
+}
+
+form b.erreur {
+	color: #990000;
+	font-size: 0.77em;
+	display: block;
+}
+
+/*fieldset:nth-child(2), 
+fieldset:nth-child(3) {
+	display: none;
+}*/
+
+.cacher {
+	display: none;
+}
+.afficher {
+	display: block;
+}
+
+.recommended {
+	font-weight: bold;
+}
+
+.disabled {
+	color: #999;
+}

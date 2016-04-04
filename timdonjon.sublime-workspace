@@ -1,0 +1,563 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"add",
+				"addEventListener"
+			],
+			[
+				"afficherM",
+				"afficherMetsParCategorie"
+			],
+			[
+				"mets",
+				"metsDansCategorie"
+			],
+			[
+				"background",
+				"background-image"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"affiche",
+				"afficherDetailMembre"
+			],
+			[
+				"affich",
+				"afficherDetailMembre"
+			],
+			[
+				"aff",
+				"afficherMembreEnVedette"
+			],
+			[
+				"li",
+				"liste-des-membres"
+			],
+			[
+				"me",
+				"membre"
+			],
+			[
+				"_",
+				"_bce_equipe"
+			],
+			[
+				"art",
+				"articleEnVedette"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"liste",
+				"listeDesMembres"
+			],
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"ma",
+				"margin-top"
+			],
+			[
+				"pa",
+				"padding-top"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"bac",
+				"background-position"
+			],
+			[
+				"backgroun",
+				"background-size"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"le",
+				"letter-spacing"
+			],
+			[
+				"marg",
+				"margin-left"
+			],
+			[
+				"te",
+				"text-decoration"
+			],
+			[
+				"backgro",
+				"background-color"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"backg",
+				"background-position"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"border-r",
+				"border-radius"
+			],
+			[
+				"se",
+				"section	Tag"
+			],
+			[
+				"bi",
+				"Bigelow"
+			],
+			[
+				"inlin",
+				"inline-table"
+			],
+			[
+				"tex",
+				"text-top"
+			],
+			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"bor",
+				"border-left"
+			],
+			[
+				"bord",
+				"border-color"
+			],
+			[
+				"p",
+				"padding-right"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"l",
+				"length-1"
+			],
+			[
+				"tab",
+				"tabTauxClic"
+			],
+			[
+				"txt",
+				"txtMotLu"
+			],
+			[
+				"frm",
+				"frmInverse"
+			],
+			[
+				"tx",
+				"txtMotLu"
+			],
+			[
+				"get",
+				"getElementsByName"
+			],
+			[
+				"g",
+				"getElementsByName"
+			],
+			[
+				"border",
+				"border-bottom"
+			],
+			[
+				"ri",
+				"Ribbon_V2_2011"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"bg",
+				"background-color"
+			],
+			[
+				"i",
+				"italic"
+			],
+			[
+				"parse",
+				"parseFloat"
+			],
+			[
+				"inli",
+				"inline-block"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "pack",
+		"selected_items":
+		[
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"package install",
+				"Package Control: Install Package"
+			],
+			[
+				"packagein",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 416.0
+	},
+	"console":
+	{
+		"height": 174.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/E/SKOOLSTUFFZ/PWEBZ1/tp1-timdonjon/timdonjon.html",
+		"/I/tim/csemaan/pw1/h2016/exercices/cours11/formulaire-inscription/inscription.html",
+		"/I/tim/csemaan/pw1/h2016/exercices/cours11/formulaire-inscription/js/inscription.js",
+		"/E/SKOOLSTUFFZ/PWEBZ1/formulaire-insc/EX-FORMULAIRE.html",
+		"/E/SKOOLSTUFFZ/PWEBZ1/formulaire-insc/js/inscription.js",
+		"/E/SKOOLSTUFFZ/PWEBZ1/EX-FORMULAIRE.html",
+		"/C/Users/e0931147/Desktop/examen-ha/js/examen1-donnees.js",
+		"/E/SKOOLSTUFFZ/PWEBZ1/bce-equipe/index.html",
+		"/E/SKOOLSTUFFZ/PWEBZ1/bce-equipe/js/bce-equipe.js",
+		"/C/Users/e0931147/Desktop/examen-ha/index.html",
+		"/C/Users/e0931147/Desktop/examen-ha/js/examen1.js",
+		"/E/SKOOLSTUFFZ/1ereSession/creationweb/cours3/leila/css/leila.css",
+		"/E/SKOOLSTUFFZ/pw1/inscription.css",
+		"/E/SKOOLSTUFFZ/pw1/EX-FORMULAIRE.html",
+		"/E/SKOOL/pw1/bce-equipe/css/bce-equipe.css",
+		"/E/SKOOL/pw1/bce-equipe/index.html",
+		"/E/SKOOL/pw1/bce-equipe/js/bce-equipe.js",
+		"/E/SKOOL/pw1/bce-equipe/js/bce-equipe-donnees.js",
+		"/C/Users/e0931147/Desktop/index.html",
+		"/C/Users/e0931147/Desktop/js/ex1-donnees.js",
+		"/C/Users/e0931147/Desktop/js/ex1.js",
+		"/E/SKOOL/pw1/rev.html",
+		"/E/SKOOL/pw1/bce-equipe/bce-equipe-donnees.html",
+		"/I/tim/csemaan/pw1/h2016/exercices/cours3/bce-equipe/css/bce-equipe.css",
+		"/I/tim/csemaan/pw1/h2016/exercices/cours3/bce-equipe/index.html",
+		"/I/tim/csemaan/pw1/h2016/exercices/cours3/bce-equipe/js/bce-equipe.js",
+		"/E/SKOOL/Sublime Text Build 3083 x64/Data/Packages/User/myjs.sublime-snippet",
+		"/E/SKOOL/Sublime Text Build 3083 x64/Data/Packages/User/mycss.sublime-snippet",
+		"/E/SKOOL/Sublime Text Build 3083 x64/Data/Packages/User/myhtml.sublime-snippet",
+		"/E/SKOOL/pw1/bce-equipe/js/index.html",
+		"/C/Users/e0931147/Desktop/bce-equipe/index.html",
+		"/E/SKOOL/creationweb/cours3/leila/index.html",
+		"/E/SKOOL/creationweb/cours3/leila/css/leila.css",
+		"/E/SKOOL/creationweb/CWeb/TP2/css/tp2.css",
+		"/E/SKOOL/creationweb/origami/index.html",
+		"/E/SKOOL/creationweb/origami/css/origami.css",
+		"/M/SKOOL/creationweb/CWeb/TP2/index.html",
+		"/M/SKOOL/creationweb/CWeb/TP2/css/tp2.css",
+		"/E/SKOOL/Programmation/ponctuel11.js",
+		"/E/SKOOL/Programmation/ponctuel14.html",
+		"/E/SKOOL/Programmation/Revision_memoireDepartV2.html",
+		"/E/SKOOL/Programmation/revision.html",
+		"/E/SKOOL/Programmation/Ponctuel_15_JSChaines.doc",
+		"/E/SKOOL/Programmation/ponctuel15.html",
+		"/E/SKOOL/Programmation/ponctuel12.html",
+		"/E/SKOOL/creationweb/ex8/css/formulaire.css",
+		"/E/SKOOL/creationweb/CWeb/TP2/veille.html",
+		"/E/SKOOL/creationweb/CWeb/TP2/bilan.html",
+		"/E/SKOOL/creationweb/CWeb/TP2/index.html",
+		"/E/SKOOL/creationweb/ex8/formulaire.html",
+		"/E/SKOOL/creationweb/CWeb/TP2/fiches.html",
+		"/E/SKOOL/creationweb/ex7/css/tableau.css",
+		"/F/SKOOL/creationweb/CWeb/TP2/index.html",
+		"/F/SKOOL/creationweb/CWeb/TP2/css/tp2.css",
+		"/F/SKOOL/creationweb/cours3/leila/css/leila.css",
+		"/M/SKOOL/Sublime Text Build 3083 x64/Data/Packages/User/Default (Windows).sublime-keymap",
+		"/M/SKOOL/Sublime Text Build 3083 x64/Data/Packages/User/AdvancedNewFile.sublime-settings",
+		"/M/SKOOL/Sublime Text Build 3083 x64/Data/Packages/User/Package Control.sublime-settings",
+		"/M/SKOOL/Sublime Text Build 3083 x64/Data/Packages/User/Side Bar.sublime-settings",
+		"/M/SKOOL/Sublime Text Build 3083 x64/Data/Packages/User/SFTP.sublime-settings",
+		"/I/tim/csemaan/cw/cours28/ex-audio/css/audio.css",
+		"/I/tim/csemaan/cw/cours28/ex-audio/index.html",
+		"/E/SKOOL/creationweb/sftp-config.json",
+		"/E/SKOOL/Sublime Text Build 3083 x64/Data/Settings/SideBarEnhancements.json",
+		"/M/SKOOL/creationweb/cours3/leila/css/leila.css",
+		"/M/SKOOL/creationweb/cours3/leila/index.html",
+		"/M/SKOOL/creationweb/examenintra/css/nestor.css",
+		"/M/SKOOL/creationweb/examenintra/index.html",
+		"/M/SKOOL/creationweb/ex8/formulaire.html",
+		"/M/SKOOL/creationweb/ex7/tableau.html",
+		"/E/SKOOL/creationweb/CWeb/index.html",
+		"/E/SKOOL/creationweb/CWeb/veille.html",
+		"/E/SKOOL/creationweb/CWeb/bilan.html",
+		"/E/SKOOL/creationweb/CWeb/fiches.html",
+		"/E/SKOOL/creationweb/CWeb/TP1/TP1.html",
+		"/E/SKOOL/creationweb/CWeb/TP1/equipe.html",
+		"/E/SKOOL/creationweb/CWeb/TP1/camille.html",
+		"/E/SKOOL/Programmation/ponctuel10.html",
+		"/E/SKOOL/Programmation/tp2.html",
+		"/C/Users/e0931147/Desktop/tp2.html",
+		"/E/SKOOL/creationweb/cours3/leila/menu.html",
+		"/E/SKOOL/Programmation/TP1/TP1-prog.html",
+		"/E/SKOOL/creationweb/ex7/tableau.html",
+		"/I/tim/csemaan/cw/cours22/leila/index.html",
+		"/I/tim/csemaan/cw/cours22/leila/css/leila.css",
+		"/E/SKOOL/creationweb/ex7/tableaux",
+		"/E/SKOOL/creationweb/form.html",
+		"/I/tim/csemaan/cw/cours15/leila/css/leila.css",
+		"/U/Créations-Web/cours3/leila/index.html",
+		"/U/Créations-Web/serverstuffcomment.html",
+		"/U/Créations-Web/cours3/leila/css/leila.css",
+		"/I/tim/csemaan/cw/cours15/box-model.html",
+		"/I/tim/csemaan/cw/cours15/leila/index.html",
+		"/U/Créations-Web/sftp-config.json",
+		"/U/Programmation/ponctuel10.html",
+		"/C/Users/e0931147/Desktop/css/nestor.css",
+		"/F/CWeb/TP1.html",
+		"/F/CWeb/equipe.html",
+		"/F/CWeb/CSS/timcss.css",
+		"/F/CWeb/camille.html",
+		"/C/Users/e0931147/Desktop/20150928172328_ponctuel7-2.html",
+		"/C/Users/e0931147/Desktop/ex4.html",
+		"/U/Programmation/pontuel6.html",
+		"/U/Programmation/ponctuel7.html",
+		"/U/Programmation/ponctuel7-2.html",
+		"/U/Programmation/Cours5/4000/squelette.html",
+		"/U/Programmation/ponctuel5.html",
+		"/U/Sublime Text Build 3083 x64/Data/Packages/User/Side Bar.sublime-settings",
+		"/U/Sublime Text Build 3083 x64/Data/Packages/User/Preferences.sublime-settings",
+		"/C/Users/e0931147/Desktop/squelette.html",
+		"/U/Créations-Web/cours6/portfolio-eg/index.html",
+		"/U/Créations-Web/cours3/leila/jscript/index",
+		"/C/Users/e0931147/Desktop/quelques_exemples_HTML/moyenne.html",
+		"/U/Programmation/derp2.html",
+		"/U/Programmation/derp1.html",
+		"/U/Programmation/Cours4/jstest.html",
+		"/C/Users/e0931147/Desktop/quelques_exemples_HTML/squelette.html",
+		"/C/Users/e0931147/Desktop/quelques_exemples_HTML/noteV1.html",
+		"/C/Users/e0931147/Desktop/quelques_exemples_HTML/exemple_dans_le_cours.html",
+		"/U/Créations-Web/cours2/bce/ressources/css/bce.css",
+		"/U/Créations-Web/cours2/bce/bce.html",
+		"/U/Sublime Text Build 3083 x64/Data/Packages/Default/Default (Windows).sublime-keymap",
+		"/U/Sublime Text Build 3083 x64/Data/Packages/User/Default (Windows).sublime-keymap",
+		"/U/Sublime Text Build 3083 x64/Data/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/e0931147/Desktop/test.html"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"position",
+			"membreEnVedette",
+			"articleEnVedette",
+			"musique",
+			"si_finance",
+			"gererChoixMembre",
+			"evt.target",
+			"afficherMembreEnVedette",
+			"[0]",
+			"_bce_equipe",
+			"h3",
+			"note",
+			"350",
+			"295",
+			"ul",
+			"\\",
+			"img",
+			"<img",
+			"20px",
+			"mini",
+			"minimap",
+			"map",
+			"ctrl+b",
+			"color",
+			"div"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 68.0
+	},
+	"pinned_build_system": "",
+	"project": "timdonjon.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 196.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
