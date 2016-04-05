@@ -15,7 +15,9 @@
 	document.querySelector("button[data-etape='3']").addEventListener("click", avance);
 	document.querySelector("button[data-etape='4']").addEventListener("click", avance);
 	document.querySelector("button[data-etape='5']").addEventListener("click", avance);
-	window.addEventListener("load", afficherStats(attributes));
+	document.querySelector("button[data-recule='5']").addEventListener("click", recule);
+	document.querySelector("button.retour").addEventListener("click", home);
+	document.querySelector("button.fini").addEventListener("click", home);
 
 	var list = [];
 
@@ -38,7 +40,6 @@
 		for (var i = 0; i < 2; i++) {
 			for (variable in attributes) {
 				var textNode = document.createTextNode(attributes[variable]);
-				console.log(document.getElementsByName(variable)[i]);
 				document.getElementsByName(variable)[i].appendChild(textNode);
 			}
 		};
@@ -47,13 +48,17 @@
 	function avance() {
 		var etape = parseInt(this.dataset.etape);
 		if(etape < 6) {
-			// Mauvaise pratique : ne pas modifier le CSS dans le code JS (ou du moins garder ça au minimum)
-			// document.querySelector("fieldset:nth-child(" + etape + ")").style.display = "none";
-			// document.querySelector("fieldset:nth-child(" + (etape + 1) + ")").style.display = "block";
+			if (etape == 1){
+				afficherStats(attributes);
+			}
+
 			if (etape == 2) {
 				persoModif();
 			}
-			// Meilleure pratique, utiliser les classes CSS
+
+			if (etape == 5) {
+				sauvegarder(attributes);
+			};
 			document.querySelector("div.etape" + etape).classList.add("cacher");
 			document.querySelector("div.etape" + etape).classList.remove("afficher");
 
@@ -63,21 +68,18 @@
 		}	
 	}
 
-	function recule() {
-		var etape = parseInt(this.dataset.etape);
+	function recule(home) {
+		var etape = parseInt(this.dataset.recule);
 		if(etape < 6) {
-			// Mauvaise pratique : ne pas modifier le CSS dans le code JS (ou du moins garder ça au minimum)
-			// document.querySelector("fieldset:nth-child(" + etape + ")").style.display = "none";
-			// document.querySelector("fieldset:nth-child(" + (etape + 1) + ")").style.display = "block";
-			
-			// Meilleure pratique, utiliser les classes CSS
 			document.querySelector("div.etape" + etape).classList.add("cacher");
 			document.querySelector("div.etape" + etape).classList.remove("afficher");
-
 			document.querySelector("div.etape" + (etape-1)).classList.add("afficher");
 			document.querySelector("div.etape" + (etape-1)).classList.remove("cacher");
-			
 		}	
+	}
+
+	function home() {
+		location.reload();
 	}
 
 	function disabled(attributes) {
@@ -119,97 +121,77 @@
 		}
 	}
 
-function persoModif() {
-	var classSpeciality = {
-		"Guerrier": "force",
-		"Voleur": "dextérité",
-		"Magicien": "intelligence",
-		"Clerc": "sagesse",
-		"Nain": "force",
-		"Elfe": "intelligence et sagesse",
-		"Halfelin": "dextérité et force"
-	};
-	var classe = getClass();
-	var texteClasse = "Tu a choisi d'être un: " + classe;
-	var confirmClasse = document.createTextNode(texteClasse);
-	document.querySelector(".confirmClasse").appendChild(confirmClasse);
+	function persoModif() {
+		var classSpeciality = {
+			"Guerrier": "force",
+			"Voleur": "dextérité",
+			"Magicien": "intelligence",
+			"Clerc": "sagesse",
+			"Nain": "force",
+			"Elfe": "intelligence et sagesse",
+			"Halfelin": "dextérité et force"
+		};
+		var classe = getClass();
+		var texteClasse = "Tu a choisi d'être un: " + classe;
+		var confirmClasse = document.createTextNode(texteClasse);
+		document.querySelector(".confirmClasse").appendChild(confirmClasse);
 
-	var specialClass = "La spécialité de cette classe est: " + classSpeciality[classe];
-	document.querySelector(".tableauPerso").appendChild(document.createTextNode(specialClass));
-}
+		var specialClass = "La spécialité de cette classe est: " + classSpeciality[classe];
+		document.querySelector(".tableauPerso").appendChild(document.createTextNode(specialClass));
+	}
 
-function getClass () {
-	var radios = document.getElementsByName("race");
-	for (var i = radios.length - 1; i >= 0; i--) {
-		if(radios[i].checked) {
-			return radios[i].value.charAt(0).toUpperCase() + radios[i].value.slice(1);
+	function getClass () {
+		var radios = document.getElementsByName("race");
+		for (var i = radios.length - 1; i >= 0; i--) {
+			if(radios[i].checked) {
+				return radios[i].value.charAt(0).toUpperCase() + radios[i].value.slice(1);
+			}
+		};
+	}
+
+	function ajouter(attributes, cb) {
+			var perso = {};
+			perso.nom = document.getElementById("nom").value;
+			perso.classe = getClass();
+			perso.attributes = attributes;
+			return cb(perso);
 		}
-	};
-}
 
-// function ajouter() {
-// 		var articleLi = this.parentNode;
-// 		var article = {};
-// 		article.nom = articleLi.querySelector(".nom").innerHTML;
-// 		article.prix = articleLi.querySelector(".prix").innerHTML;
-// 		article.qte = 1;
-// 		panier[panier.length] = article;
-// 		console.log(panier);
-// 		console.log(JSON.stringify(panier));
-// 	}
+	function sauvegarder(attributes) {
+		ajouter(attributes, function(perso) {
+			var util = document.getElementById("utilisateur").value;
+			
+			var users = localStorage.getItem("users");
+			if(users) {
+				users = JSON.parse(users);
+				if(users[util]) {
+					users[util].push(perso);
+				}
+				else {
+					users[util] = [perso];
+					localStorage.setItem("users", JSON.stringify(users));
+				}
+			}
+			else {
+				var usersObject = {};
+				usersObject[util] = [perso];
+				localStorage.setItem("users", JSON.stringify(usersObject));
+			}
+		});
+	}
 
-// 	function sauvegarder() {
-// 		var util = document.querySelector("#utilisateur").value;
+	function afficher() {
+		// Nom de l'identifiant saisi par l'utilisateur dans le "textbox"
+		var util = document.querySelector("#utilisateur").value;
+
+		document.querySelector("ul.contenu-panier").innerHTML = "";
+		var lesPaniersSauvegardes = JSON.parse(localStorage.getItem("users"));
 		
-// 		// Récupérer le tiroir étiqueté "lesPaniers" dans localStorage
-// 		var lesPaniers = localStorage.getItem("lesPaniers");
-// 		// S'il existe ...
-// 		if(lesPaniers) {
-// 			// Vérifier si cet utilisateur a déjà un panier d'achat...
-// 			lesPaniers = JSON.parse(lesPaniers);
-// 			if(lesPaniers[util]) {
-// 				console.log("L'utilisateur a déjà un panier d'achats ; il faut le mettre à jour");
-// 			}
-// 			else {
-// 				lesPaniers[util] = panier;
-// 				localStorage.setItem("lesPaniers", JSON.stringify(lesPaniers));
-// 				console.log(localStorage.getItem("lesPaniers"));
-// 			}
-// 		}
-// 		// S'il n'existe pas...
-// 		else {
-// 			var objetDesPaniers = {};
-// 			objetDesPaniers[util] = panier;
-// 			localStorage.setItem("lesPaniers", JSON.stringify(objetDesPaniers));
-// 			console.log(localStorage.getItem("lesPaniers"));
-// 		}
-// 	}
-
-// 	function afficher() {
-// 		// Nom de l'identifiant saisi par l'utilisateur dans le "textbox"
-// 		var util = document.querySelector("#utilisateur").value;
-
-// 		document.querySelector("ul.contenu-panier").innerHTML = "";
-// 		var lesPaniersSauvegardes = JSON.parse(localStorage.getItem("lesPaniers"));
-		
-// 		if(lesPaniersSauvegardes[util]) {
-// 			var lePanierDeCetUtil = lesPaniersSauvegardes[util];
-// 			for (var i = 0; i < lePanierDeCetUtil.length; i++) {
-// 				document.querySelector("ul.contenu-panier").innerHTML += "<li>" + lePanierDeCetUtil[i].nom + "</li>";
-// 			}
-// 		}
-// 	}
-
-
-
+		if(lesPaniersSauvegardes[util]) {
+			var lePanierDeCetUtil = lesPaniersSauvegardes[util];
+			for (var i = 0; i < lePanierDeCetUtil.length; i++) {
+				document.querySelector("ul.contenu-panier").innerHTML += "<li>" + lePanierDeCetUtil[i].nom + "</li>";
+			}
+		}
+	}
 })();
-
-
-// var users = {
-// 	0: {
-// 		characters: [
-// 			{name}, {classe}, {attributes}
-// 		]
-// 	}
-
-// };
