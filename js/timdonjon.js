@@ -19,9 +19,6 @@
 	document.querySelector("button.retour").addEventListener("click", home);
 	document.querySelector("button.fini").addEventListener("click", home);
 
-	var list = [];
-
-
 	function statGen(object) {
 		for (variable in object) {
 			object[variable] = 3 + Math.floor(Math.random()*16);
